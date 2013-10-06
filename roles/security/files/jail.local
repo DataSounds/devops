@@ -1,0 +1,5 @@
+[ssh]
+enabled = true
+banaction = ufw-ssh
+port = ssh
+maxretry = 3
