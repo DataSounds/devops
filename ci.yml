@@ -1,0 +1,11 @@
+# Configure a Jenkins master instance
+# This has the Jenkins Java app, but none of the requirements
+# to run the tests.
+
+- name: Configure instance(s)
+  hosts: ci
+  user: deploy
+  sudo: True
+  gather_facts: True
+  roles:
+    - ci
